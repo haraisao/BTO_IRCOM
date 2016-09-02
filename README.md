@@ -1,7 +1,7 @@
 BTO_IRCOM
 =========
 
-このプログラムは、Bit Trade One社から販売されているUSB接続　赤外線リモコン(http://bit-trade-one.co.jp/BTOpicture/Products/005-RS/)を制御するためのPythonプログラムです。
+このプログラムは、Bit Trade One社から販売されているUSB接続　赤外線リモコン(http://bit-trade-one.co.jp/BTOpicture/Products/005-RS/) を制御するためのPythonプログラムです。
 
 動作確認は、WindowsとLinuxで行っていますが、使っているUSBアクセスライブラリが異なりますので、注意してください。
 
@@ -17,7 +17,7 @@ Windwos
 
 Linux
 ------
-- PyUSB (https://walac.github.io/pyusb/)
+- PyUSB 1.0 (https://walac.github.io/pyusb/)
 
 
 Copyright
