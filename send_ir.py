@@ -27,12 +27,13 @@ if __name__ == '__main__' :
   if sys.platform == 'win32':
     from ircom_win import *
   else:
-    from irom import *
+    from ircom import *
 
   com = ircom()
 
   try:
     com.open()
+    print data
     com.send_ir(data)
     com.close()
   except:
