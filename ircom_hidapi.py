@@ -1,5 +1,10 @@
 #
 #
+#  Bit Trand One, IR COMM Control 
+#  This program require 'python-hidapi'
+#  Copyright (C) 2016 Isao Hara, All Right Reserved
+#  License : MIT License 1.0
+
 import hid
 
 def find_ircom(n):

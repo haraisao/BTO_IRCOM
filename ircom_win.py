@@ -1,3 +1,10 @@
+#
+#
+#  Bit Trand One, IR COMM Control 
+#  This program require 'pywinusb v0.4.1'
+#  Copyright (C) 2016 Isao Hara, All Right Reserved
+#  License : MIT License 1.0
+
 from pywinusb import hid
 import time
 
@@ -7,6 +14,7 @@ class ircom:
     self.bufsize=65
     self.device = None
     self.devices = hid.HidDeviceFilter(vendor_id=0x22ea, product_id=0x001e).get_devices()
+
     for dev in self.devices:
       if dev.device_path.find('mi_03') > 0:
         self.device=dev
