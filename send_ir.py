@@ -7,10 +7,23 @@
 #
 import sys
 
+def getHexArray(data):
+  res = []
+  for i in range(7):
+    st=i*2
+    ed=i*2+2
+    v=data[st:ed]
+    if v :
+      res.append(int("0x"+v, 0))
+    else:
+      res.append(0)
+  return res
+
 
 if __name__ == '__main__' :
 
-  data = argv(1)
+  data = getHexArray(sys.argv[1])
+
   if sys.platform == 'win32':
     from ircom_win import *
   else:
