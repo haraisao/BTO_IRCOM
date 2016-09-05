@@ -71,7 +71,7 @@ class ircom:
       res = self.read(self.max_bufsize)
       if res[1] != 0:
         self.set_recieve_mode(0x00)
-        return res
+        return res[1:8]
 
   def send_ir(self, data):
     self.init_buffer()

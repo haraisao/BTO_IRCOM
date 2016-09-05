@@ -74,7 +74,7 @@ class ircom:
       res = self.read()
       if res[2] != 0:
         self.set_recieve_mode(0x00)
-        return res
+        return res[2:9]
 
   def send_ir(self, data):
     data.insert(0, 0x60)

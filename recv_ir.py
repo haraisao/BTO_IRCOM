@@ -7,6 +7,12 @@
 #
 import sys
 
+def array2string(data):
+  res=''
+  for x in data:
+    res += '%02x' % x
+  return res
+
 
 if __name__ == '__main__' :
   if sys.platform == 'win32':
@@ -18,7 +24,8 @@ if __name__ == '__main__' :
 
   try:
     com.open()
-    print com.recieve_ir()
+    data = com.recieve_ir()
+    print array2string(data)
     com.close()
   except:
     print "Error"
